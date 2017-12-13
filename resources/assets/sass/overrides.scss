@@ -1,0 +1,31 @@
+.navbar{
+  border-bottom: 2px solid #f00;
+  box-shadow: 0 0 1px rgba(57, 70, 78, .15), 0 10px 50px -8px rgba(57, 70, 78, .25);
+}
+.navbar-link{border-right:1px solid #E0E0E2;}
+.navbar .container .column {padding:0 !important;}
+.navbar-item img {
+    max-height: 2.2rem;
+}
+.main-nav{
+  background-color: #f00;
+  border-bottom: 3px solid #005c98;
+  border-radius: 5px;
+  .navbar-item{
+      color: #fff;
+      font-weight: 800;
+
+      &:hover{
+        background-color: #f00;
+        color:#005c98;
+        border-bottom: 2px solid #005c98;
+      }
+  }
+}
+.date{
+  font-size: .8rem;
+  color: #f00;
+}
+.is-danger{
+  color:#f00;
+}
