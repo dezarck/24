@@ -63,33 +63,39 @@
       </div>
       <div class="container m-t-15">
         <div class="columns is-gapless is-multiline">
-          <div class="column">
-            <nav class="navbar main-nav ">
-              <a href="#" class="navbar-item"><i class="fa fa-home"></i></a>
-              <a href="#" class="navbar-item">NEWS</a>
-              <a href="#" class="navbar-item">EKBIS</a>
-              <a href="#" class="navbar-item">PENDIDIKAN</a>
-              <a href="#" class="navbar-item">OLAHRAGA</a>
-              <a href="#" class="navbar-item">KESEHATAN</a>
-              <a href="#" class="navbar-item">TEKNO</a>
-              <a href="#" class="navbar-item">OTOMOTIF</a>
-              <a href="#" class="navbar-item">HIBURAN</a>
-              <a href="#" class="navbar-item">MILENIAL</a>
-              <a href="#" class="navbar-item">INDEKS</a>
-            </nav>
-          </div>
-          <div class="column">
-            <div class="tags m-t-5 is-centered">
-              <a href="#" class="tag is-link">Nasional</a>
-              <a href="#" class="tag is-link">Internasional</a>
-              <a href="#" class="tag is-link">Regional</a>
-              <a href="#" class="tag is-link">Politik</a>
-              <a href="#" class="tag is-link">Hukum & Kriminal</a>
-              <a href="#" class="tag is-link">Peristiwa</a>
+            <div class="column">
+              <nav class="navbar main-nav ">
+                <a href="#" class="navbar-item"><i class="fa fa-home"></i></a>
+                <a href="#" class="navbar-item">NEWS</a>
+                <a href="#" class="navbar-item">EKBIS</a>
+                <a href="#" class="navbar-item">PENDIDIKAN</a>
+                <a href="#" class="navbar-item">OLAHRAGA</a>
+                <a href="#" class="navbar-item">KESEHATAN</a>
+                <a href="#" class="navbar-item">TEKNO</a>
+                <a href="#" class="navbar-item">OTOMOTIF</a>
+                <a href="#" class="navbar-item">HIBURAN</a>
+                <a href="#" class="navbar-item">MILENIAL</a>
+                <a href="#" class="navbar-item">INDEKS</a>
+              </nav>
             </div>
-          </div>
+            <div class="column">
+              <div class="tags m-t-5 is-centered">
+                <a href="#" class="tag is-link">Nasional</a>
+                <a href="#" class="tag is-link">Internasional</a>
+                <a href="#" class="tag is-link">Regional</a>
+                <a href="#" class="tag is-link">Politik</a>
+                <a href="#" class="tag is-link">Hukum & Kriminal</a>
+                <a href="#" class="tag is-link">Peristiwa</a>
+              </div>
+            </div>
+            {{-- <div class="column is-12 is-offset-1 has-text-centered">
+                <div class="has-addons is-centered">
+                    <a href="#" onclick="iklan_show()" class="button is-small is-delete is-danger iklan-1">show/hide</a>
+                    <img id="iklan1" class="m-t-15" src="https://newrevive.detik.com/images/3d1cbc7f1943aa8427dda30614190abb.jpg" alt="iklan">
+                </div>
+            </div> --}}
         </div>
-        </div>
+      </div>
 
 
       <br />

@@ -17261,6 +17261,14 @@ label.panel-block:hover {
   color: #f00;
 }
 
+.is-muted {
+  color: #b5b5b5 !important;
+}
+
+a.is-muted:hover {
+  color: #7a7a7a !important;
+}
+
 .m-t-5 {
   margin-top: 5px;
 }
