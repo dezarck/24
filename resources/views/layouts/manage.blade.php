@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Online24jam | Always Be First</title>
+    <title>Online24jam Dashboard</title>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('styles')
 </head>
 <body>
     @include('_includes.nav.main')
-    <div id="app">
+    @include('_includes.nav.manage')
+
+    <div class="management-area" id="app">
         @yield('content')
     </div>
 

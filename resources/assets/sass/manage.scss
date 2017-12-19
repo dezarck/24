@@ -1,0 +1,18 @@
+.side-menu{
+  position: absolute;
+  top: 58px;
+  bottom: 0;
+  width: 200px;
+  background-color: whitesmoke;
+  overflow-y: auto;
+  border-right: 1px solid #ff0000;
+}
+.management-area{
+  position: absolute;
+  top: 4rem;
+  left: 200px;
+  right: 0;
+}
+.flex-container{
+  margin: 10px 25px;
+}
