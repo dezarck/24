@@ -17364,10 +17364,6 @@ button.nav-item.is-active {
   color: #f00;
 }
 
-.is-danger {
-  color: #f00;
-}
-
 .m-t-5 {
   margin-top: 5px;
 }
@@ -17821,9 +17817,9 @@ button.nav-item.is-active {
   top: 58px;
   bottom: 0;
   width: 200px;
-  background-color: whitesmoke;
+  background-color: #f9f9f9;
   overflow-y: auto;
-  border-right: 1px solid #ff0000;
+  border-right: 1px solid whitesmoke;
 }
 
 .management-area {

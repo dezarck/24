@@ -38,11 +38,11 @@
           @if (Auth::guest())
             <a href="{{route('login')}}" class="navbar-item is-tab">Login</a>
           @else
-          <a class="navbar-link" href="/documentation/overview/start/">
+          <a class="navbar-link" href="#">
             Bonjour, {{ Auth::user()->name }}
           </a>
           <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="/documentation/overview/start/">
+            <a class="navbar-item" href="#">
               <span class="icon">
                 <i class="fa fa-fw fa-user-circle-o m-r-5"></i>
               </span>Profile
