@@ -41,20 +41,10 @@
                 <div class="field">
                   <b-radio name="password_options" v-model="password_options" native-value="manual"> Ganti Password Secara Manual</b-radio>
                   <p class="control m-t-15">
-                    <input type="text" class="input" name="password" id="password" v-if="password_options == 'manual'" placeholder="Tambahkan Manual Password Baru Anda.">
+                    <input type="password" class="input" name="password" id="password" v-if="password_options == 'manual'" placeholder="Tambahkan Manual Password Baru Anda.">
                   </p>
                 </div>
             </div>
-
-            {{-- </b-radio-group>
-
-
-
-
-
-            --}}
-
-
           </div>
           <hr class="m-t-0">
           <button class="button is-primary pull-right">Edit User</button>
