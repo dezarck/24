@@ -162,12 +162,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        DevMarketer\EasyNav\EasyNavServiceProvider::class,
 
         /*
          * Package Service Providers...
          */
-        Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -181,7 +179,6 @@ return [
         /*
          * My Third Party Service Providers
         */
-        Laratrust\LaratrustServiceProvider::class,
     ],
 
     /*
