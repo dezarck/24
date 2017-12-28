@@ -9,13 +9,13 @@
     </div>
     <hr class="m-t-0">
 
-    <div class="columns">
-      <div class="column">
-        <form action="{{route('users.update', $user->id)}}" method="POST">
-          {{method_field('PUT')}}
-          {{csrf_field()}}
+    <form action="{{route('users.update', $user->id)}}" method="POST">
+      {{method_field('PUT')}}
+      {{csrf_field()}}
+      <div class="columns">
+        <div class="column">
           <div class="field">
-            <label for="name" class="label">Nama :</label>
+            <label for="name" class="label">Name:</label>
             <p class="control">
               <input type="text" class="input" name="name" id="name" value="{{$user->name}}">
             </p>
@@ -46,11 +46,26 @@
                 </div>
             </div>
           </div>
-          <hr class="m-t-0">
-          <button class="button is-primary pull-right">Edit User</button>
-        </form>
+        </div> <!-- end of .column -->
+
+        <div class="column">
+          <label for="roles" class="label">Roles:</label>
+          <input type="hidden" name="roles" :value="rolesSelected" />
+
+            @foreach ($roles as $role)
+              <div class="field">
+                <b-checkbox v-model="rolesSelected" :native-value="{{$role->id}}">{{$role->display_name}}</b-checkbox>
+              </div>
+            @endforeach
+        </div>
       </div>
-    </div>
+      <div class="columns">
+        <div class="column">
+          <hr />
+          <button class="button is-primary is-pulled-right" style="width: 250px;">Edit User</button>
+        </div>
+      </div>
+    </form>
 
   </div> <!-- end of .flex-container -->
 @endsection
@@ -58,12 +73,15 @@
 
 @section('scripts')
   <script>
+
     var app = new Vue({
       el: '#app',
       data: {
         auto_password: true,
-        password_options: 'keep'
+        password_options: 'keep',
+        rolesSelected: {!! $user->roles->pluck('id') !!}
       }
     });
+
   </script>
 @endsection

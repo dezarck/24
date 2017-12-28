@@ -17330,10 +17330,6 @@ button.nav-item.is-active {
           box-shadow: 0 0 1px rgba(57, 70, 78, 0.15), 0 10px 50px -8px rgba(57, 70, 78, 0.25);
 }
 
-.navbar-link {
-  border-right: 1px solid #E0E0E2;
-}
-
 .navbar .container .column {
   padding: 0 !important;
 }
@@ -17812,14 +17808,39 @@ button.nav-item.is-active {
   padding-right: 100px;
 }
 
-.side-menu {
-  position: absolute;
-  top: 58px;
+#admin-side-menu {
+  position: fixed;
+  top: 3.6rem;
+  left: -200px;
   bottom: 0;
   width: 200px;
-  background-color: #f9f9f9;
   overflow-y: auto;
-  border-right: 1px solid whitesmoke;
+  z-index: 100;
+  -webkit-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
+  border-right: 1px solid #e0e0e0;
+}
+
+#admin-side-menu.is-active {
+  left: 0;
+  -webkit-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 1024px) {
+  #admin-side-menu {
+    left: 0;
+  }
+}
+
+#admin-slideout-button {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#admin-slideout-button.is-active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .management-area {
@@ -17831,5 +17852,17 @@ button.nav-item.is-active {
 
 .flex-container {
   margin: 10px 25px;
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-list li ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 

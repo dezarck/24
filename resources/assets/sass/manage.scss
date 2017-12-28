@@ -1,11 +1,26 @@
-.side-menu{
-  position: absolute;
-  top: 58px;
+#admin-side-menu {
+  position: fixed;
+  top: 3.6rem;
+  left: -200px;
   bottom: 0;
   width: 200px;
-  background-color: #f9f9f9;
   overflow-y: auto;
-  border-right: 1px solid whitesmoke;
+  z-index: 100;
+  transition: left 0.3s ease-in-out;
+  border-right: 1px solid #e0e0e0;
+  &.is-active {
+    left: 0;
+    transition: left 0.3s ease-in-out;
+  }
+  @include desktop {
+    left: 0;
+  }
+}
+#admin-slideout-button {
+  transition: 0.3s;
+  &.is-active {
+    transition: 0.3s;
+  }
 }
 .management-area{
   position: absolute;
@@ -15,4 +30,13 @@
 }
 .flex-container{
   margin: 10px 25px;
+}
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.menu-list li ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }

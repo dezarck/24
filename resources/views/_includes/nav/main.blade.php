@@ -1,5 +1,10 @@
 <nav class="navbar is-fixed-top">
   <div class="navbar-brand">
+    @if (Request::segment(1) == "manage")
+      <a class="navbar-item is-hidden-desktop m-r-5" id="admin-slideout-button">
+        <span class="icon"><i class="fa fa-bars"></i></span>
+      </a>
+    @endif
     <a class="navbar-item" href="{{Route('manage.dashboard')}}">
       <img class="p-l-20" src="{{asset('images/site-logos.png')}}" alt="Online24jam">
     </a>
